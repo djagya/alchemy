@@ -1,7 +1,8 @@
 body {
   background-color: #353238;
   color: #EFEBE9;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1rem; }
 
 nav {
   background-color: #EFEBE9;
