@@ -16,8 +16,11 @@ nav {
   nav section {
     justify-content: center; }
 
+#topnav h2 {
+  margin-bottom: 0; }
+
 .container {
-  margin-top: 8rem; }
+  margin-top: 7rem; }
   .container header {
     max-width: 40rem;
     margin: 0 auto; }
@@ -41,3 +44,16 @@ nav {
     border-bottom: 1px solid #EFEBE9; }
     .item .symbol:hover {
       text-shadow: 0 0 8px #91192b; }
+
+footer {
+  margin-top: 3rem;
+  color: #353238;
+  background-color: #EFEBE9;
+  text-align: center;
+  padding: 0.5rem; }
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  footer a {
+    color: #A71D31; }

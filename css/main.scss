@@ -26,8 +26,12 @@ nav {
   }
 }
 
+#topnav h2 {
+  margin-bottom: 0;
+}
+
 .container {
-  margin-top: 8rem;
+  margin-top: 7rem;
 
   header {
     max-width: 40rem;
@@ -61,5 +65,23 @@ nav {
     &:hover {
       text-shadow: 0 0 8px darken($symbol-color, 5%);
     }
+  }
+}
+
+footer {
+  margin-top: 3rem;
+  color: $main-color;
+  background-color: $font-color;
+  text-align: center;
+  padding: 0.5rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    color: $symbol-color;
   }
 }
