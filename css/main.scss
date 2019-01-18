@@ -1,0 +1,65 @@
+$main-color: #353238;
+$font-color: #EFEBE9;
+$symbol-color: #A71D31;
+
+body {
+  background-color: $main-color;
+  color: $font-color;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+nav {
+  background-color: $font-color;
+  color: $main-color;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  text-align: center;
+  padding: 1rem 0;
+
+  section {
+    justify-content: center;
+  }
+}
+
+.container {
+  margin-top: 8rem;
+
+  header {
+    max-width: 40rem;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.item {
+  margin-top: 3rem;
+  text-align: center;
+
+  .name {
+    text-transform: capitalize;
+  }
+
+  .symbol {
+    color: $symbol-color;
+    margin-top: -0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 7rem;
+    line-height: 7rem;
+    transition: 500ms linear 0s;
+    outline: 0 none;
+    cursor: pointer;
+    border-bottom: 1px solid $font-color;
+
+    &:hover {
+      text-shadow: 0 0 8px darken($symbol-color, 5%);
+    }
+  }
+}
