@@ -2,6 +2,11 @@ $main-color: #353238;
 $font-color: #EFEBE9;
 $symbol-color: #A71D31;
 
+@font-face {
+  font-family: "Alchemy";
+  src: local("Apple Symbols"), url("../Alchemy.svg") format("svg");
+}
+
 body {
   background-color: $main-color;
   color: $font-color;
@@ -53,9 +58,10 @@ nav {
   }
 
   .symbol {
+    font-family: "Alchemy";
     color: $symbol-color;
-    margin-top: -0.5rem;
-    padding-bottom: 0.5rem;
+    margin-top: -1rem;
+    padding: 1rem 0;
     font-size: 7rem;
     line-height: 7rem;
     transition: 500ms linear 0s;
@@ -63,7 +69,7 @@ nav {
     cursor: pointer;
     border-bottom: 1px solid $font-color;
 
-    &:hover {
+    &:hover, &:focus, &:active {
       text-shadow: 0 0 8px darken($symbol-color, 5%);
     }
   }

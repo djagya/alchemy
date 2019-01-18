@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Alchemy";
+  src: local("Apple Symbols"), url("../Alchemy.svg") format("svg"); }
+
 body {
   background-color: #353238;
   color: #EFEBE9;
@@ -34,16 +38,17 @@ nav {
   .item .name {
     text-transform: capitalize; }
   .item .symbol {
+    font-family: "Alchemy";
     color: #A71D31;
-    margin-top: -0.5rem;
-    padding-bottom: 0.5rem;
+    margin-top: -1rem;
+    padding: 1rem 0;
     font-size: 7rem;
     line-height: 7rem;
     transition: 500ms linear 0s;
     outline: 0 none;
     cursor: pointer;
     border-bottom: 1px solid #EFEBE9; }
-    .item .symbol:hover {
+    .item .symbol:hover, .item .symbol:focus, .item .symbol:active {
       text-shadow: 0 0 8px #91192b; }
 
 footer {
